@@ -18,10 +18,13 @@ class AlbumViewController: UIViewController {
     @IBOutlet weak var musicaArtistaLabel: UILabel!
     
     @IBOutlet weak var musicaAlbumLabel: UILabel!
-    
+
+    let musicas = [Musica]()
+    //musicas = MusicaDAO.getList()
+
     //concertar isso
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "musica"{
             var musicas = [Musica]()
             musicas = MusicaDAO.getList()
@@ -33,7 +36,7 @@ class AlbumViewController: UIViewController {
             musicaAlbumLabel.text = musica.albumMusica
             albumImage.image = UIImage(named: musica.albumImagem)
         }
-    }
+    }*/
     
     
     /*
